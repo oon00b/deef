@@ -32,12 +32,18 @@ const sortArticles = (feeds: Array<JSONFeed>) => {
     ).slice(0, 200);
 };
 
+const anchor = (link, title?) => {
+    return (
+        <a href={link} referrerpolicy="no-referrer">{title ?? link}</a>
+    );
+};
+
 const row = (article) => {
     return (
         <tr>
             <td><time datetime={article.date?.toISOString()}>{article.date?.toString()}</time></td>
-            <td><a href={article.home_page_url}>{article.home_page_title}</a></td>
-            <td><a href={article.url}>{article.title}</a></td>
+            <td>{anchor(article.home_page_url, article.home_page_title)}</td>
+            <td>{anchor(article.url, article.title)}</td>
         </tr>
     );
 }

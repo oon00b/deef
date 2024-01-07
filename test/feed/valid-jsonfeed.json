@@ -1,0 +1,49 @@
+{
+    "version": "https://jsonfeed.org/version/1.1"
+    , "title": "feed"
+    , "home_page_url": "https://feed.example"
+    , "feed_url": "https://feed.example/feed"
+    , "favicon": "https://feed.example/favicon.ico"
+    , "authors": [
+        {
+            "name": "foo"
+            , "url": "https://foo.feed.example/about"
+            , "avator": "https://foo.feed.example/about/foo.jpg"
+        }
+        , {
+            "name": "bar"
+            , "url": "https://bar.feed.example/about"
+            , "avator": "https://bar.feed.example/about/bar.jpg"
+        }
+    ]
+
+    , "items": [
+        {
+            "title": "test"
+            , "id": "https://feed.example/post/test.html"
+            , "url": "https://feed.example/post/test.html"
+            , "content_text": "test"
+            , "summary": "test"
+            , "content_html": "<title>test</title>"
+            , "authors": [
+                {
+                    "name": "foo"
+                    , "url": "https://foo.feed.example/about"
+                    , "avator": "https://foo.feed.example/about/foo.jpg"
+                }
+            ]
+        }
+        , {
+            "title": "podcast test"
+            , "id": "https://feed.example/podcast/test.mp3"
+            , "url": "https://feed.example/podcast/test.mp3"
+            , "attachments": [
+                {
+                    "url": "https://feed.example/podcast/test.mp3"
+                    , "mime_type": "audio/mpeg"
+                    , "size_in_bytes": 57071
+                }
+            ]
+        }
+    ]
+}

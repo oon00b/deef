@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss>
+    <channel>
+        <title>feed</title>
+        <link>https://feed.example</link>
+        <description>test</description>
+
+        <image>
+            <title>favicon</title>
+            <link>https://feed.example/favicon.icon</link>
+            <url></url>
+        </image>
+
+        <item>
+            <title>test</title>
+            <link>https://feed.example/post/test.html</link>
+            <description>test</description>
+        </item>
+
+        <item>
+            <title>podcast test</title>
+            <link>https://feed.example/podcast/test.mp3</link>
+            <enclosure url="https://feed.example/podcast/test.mp3" type="audio/mpeg" length="57071"/>
+        </item>
+    </channel>
+</rss>

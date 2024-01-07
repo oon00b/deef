@@ -72,10 +72,6 @@ const rss2Schema = nodeElementSchema({
 
                     , source: textElementSchema().optional()
                 })
-                /*.refine(
-                    items => items.every(i => i?.title || i?.description)
-                    , {message: "<item> element must contain <title> or <description>"}
-                )*/
             )
         })
     })

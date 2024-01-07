@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF>
+    <channel rdf:about="https://feed.example/feed">
+        <title>feed</title>
+        <link>https://feed.example</link>
+        <description>feed</description>
+        <image rdf:resource="https://feed.example/favicon.ico"/>
+        <items>
+            <rdf:Seq>
+                <rdf:li rdf:resource="https://feed.example/post/test.html"/>
+            </rdf:Seq>
+        </items>
+    </channel>
+
+    <item rdf:about="https://feed.example/post/test.html">
+        <title>test</title>
+        <link>https://feed.example/post/test.html</link>
+        <description>test</description>
+        <dc:date>2023-12-22T12:50:22+09:00</dc:date>
+    </item>
+</rdf:RDF>
+

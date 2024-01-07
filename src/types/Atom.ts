@@ -37,10 +37,7 @@ const contentSchema = z.union([
     , xhtmlTextConstructSchema
     , emptyElementSchema({
         "@src": z.string()
-        , "@type": z.string().refine(
-            t => !/^(?:text|html|xhtml|)$/.test(t)
-            , {message: 'If "src" attribute is present, "type" attribute must not be "text", "html" and "xhtml"'}
-        )
+        , "@type": z.string()
     })
     , z.unknown()
 ]);
@@ -116,13 +113,7 @@ const feedSchema = nodeElementSchema({
     , generator: generatorSchema.optional()
     , icon: iconSchema.optional()
     , id: idSchema
-
     , link: listElementSchema(linkSchema)
-        /*.refine(
-            links => links.find(l => l["@rel"] === "self")
-            , {message: `<feed> element should contain <link rel="self"> link`}
-        )*/
-
     , logo: logoSchema.optional()
     , rights: rightsSchema.optional()
     , subtitle: subtitleSchema.optional()
